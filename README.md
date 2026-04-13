@@ -1,4 +1,4 @@
-# 🧱 Estrutura Completa do Projeto — Site PVC
+# 🧱 Estrutura Completa do Projeto — Site Aberturah
 
 ## 🎯 Objetivo
 
