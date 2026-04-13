@@ -13,6 +13,7 @@ Home
 Produtos
 Sobre Nós
 Contato
+Notícias
 ```
 
 ---
