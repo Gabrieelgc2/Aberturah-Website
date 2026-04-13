@@ -293,6 +293,291 @@ Container
 
 ---
 
+# 📰 PÁGINA: NOTÍCIAS
+
+## 📌 Estrutura Geral
+
+```
+[HEADER]
+[HERO]
+[FILTRO]
+[LISTA DE POSTS]
+[BOTÃO CARREGAR MAIS]
+[CTA]
+[FOOTER]
+```
+
+---
+
+## 🟦 HEADER
+
+### Componentes:
+
+* Logo
+* Navbar
+* Botão CTA (Contato)
+
+---
+
+## 🟪 HERO (TOPO DA PÁGINA)
+
+### Objetivo:
+
+Apresentar o propósito da página
+
+### Conteúdo:
+
+```
+Notícias e Atualizações
+Acompanhe nossos projetos e novidades
+```
+
+### Estrutura:
+
+```
+Section (full width)
+  └── Container
+        ├── Título (H1)
+        ├── Subtítulo
+        └── Espaçamento inferior
+```
+
+---
+
+## 🟨 FILTRO (INSTAGRAM / YOUTUBE)
+
+### Objetivo:
+
+Permitir alternar entre fontes de conteúdo
+
+### Layout:
+
+```
+[ Instagram ]   [ YouTube ]
+```
+
+### Estrutura:
+
+```
+Container
+  └── Flex Row (centralizado)
+        ├── Botão Instagram (ativo)
+        └── Botão YouTube (inativo)
+```
+
+### Comportamento:
+
+* Clique altera os posts exibidos
+* Estado ativo deve ser visualmente destacado
+
+---
+
+## 🟥 LISTA DE POSTS (CORE)
+
+### Layout:
+
+```
+[ CARD ] [ CARD ] [ CARD ]
+[ CARD ] [ CARD ] [ CARD ]
+```
+
+### Responsividade:
+
+```
+Mobile: 1 coluna
+Tablet: 2 colunas
+Desktop: 3 colunas
+```
+
+---
+
+## 📦 COMPONENTE: POST CARD
+
+### Estrutura:
+
+```
+Card Container
+  ├── Thumbnail (imagem/vídeo)
+  ├── Conteúdo
+  │     ├── Título
+  │     ├── Descrição curta
+  │     ├── Data (opcional)
+  │     └── Botão "Ver mais"
+```
+
+---
+
+### 🔴 VARIAÇÃO YOUTUBE
+
+```
+[ Thumbnail com ícone ▶ ]
+Título do vídeo
+Duração (opcional)
+[ Assistir → ]
+```
+
+---
+
+### 🟣 VARIAÇÃO INSTAGRAM
+
+```
+[ Imagem quadrada ]
+Texto curto
+[ Ver no Instagram → ]
+```
+
+---
+
+## 🟩 BOTÃO “CARREGAR MAIS”
+
+### Layout:
+
+```
+[ VER MAIS NOTÍCIAS ]
+```
+
+### Estrutura:
+
+```
+Container
+  └── Botão centralizado
+```
+
+### Comportamento:
+
+* Clique carrega mais posts
+* Futuro: scroll infinito
+
+---
+
+## 🟫 CTA
+
+### Conteúdo:
+
+```
+Quer saber mais?
+Fale com nossa equipe agora
+[ WhatsApp ]
+```
+
+### Estrutura:
+
+```
+Section (background destacado)
+  └── Container
+        ├── Título
+        ├── Texto
+        └── Botão CTA
+```
+
+---
+
+## ⬛ FOOTER
+
+### Componentes:
+
+* Logo
+* Links rápidos
+* Informações de contato
+* Copyright
+
+---
+
+# 🧩 COMPONENTES ESPECÍFICOS
+
+```
+HeroNoticias
+FiltroNoticias
+PostCard
+ListaPosts
+LoadMoreButton
+```
+
+---
+
+# 🔁 FLUXO DO USUÁRIO
+
+```
+Usuário entra
+↓
+Lê título
+↓
+Seleciona filtro (Instagram / YouTube)
+↓
+Explora posts
+↓
+Clica em um post
+↓
+Redirecionado para plataforma externa
+↓
+Retorna ou clica no CTA
+```
+
+---
+
+# 🚀 PASSO A PASSO DE IMPLEMENTAÇÃO
+
+## 1. Criar página
+
+* Noticias.tsx
+
+## 2. Criar HeroNoticias
+
+* título + subtítulo
+
+## 3. Criar FiltroNoticias
+
+* estado ativo/inativo
+
+## 4. Criar PostCard
+
+* suportar Instagram e YouTube
+
+## 5. Criar ListaPosts
+
+* grid responsivo
+
+## 6. Implementar botão “Carregar mais”
+
+## 7. Integrar CTA
+
+## 8. Conectar com dados (mock → API futura)
+
+---
+
+# 💡 OBSERVAÇÕES IMPORTANTES
+
+* Não consumir API direto no início → usar mock
+* Padronizar cards (mesmo tamanho)
+* Garantir responsividade
+* Evitar excesso de texto nos cards
+
+---
+
+# ✅ CHECKLIST
+
+* [ ] Hero clara
+* [ ] Filtro funcional
+* [ ] Cards consistentes
+* [ ] Grid responsivo
+* [ ] Botão carregar mais
+* [ ] CTA visível
+* [ ] Integração futura preparada
+
+---
+
+# 🎯 CONCLUSÃO
+
+A página de Notícias:
+
+✔ mantém o site atualizado
+✔ aumenta confiança
+✔ melhora engajamento
+✔ conecta com redes sociais
+
+---
+
+
 # 📐 PADRÕES DE DESIGN
 
 ## Container
